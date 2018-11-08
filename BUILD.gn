@@ -2261,6 +2261,25 @@ if (skia_enable_tools) {
     }
   }
 
+
+    test_app("Drawing") {
+      sources = [
+        "drawing/Drawing.cpp",
+      ]
+      libs = []
+
+      include_dirs = []
+      deps = [
+        ":flags",
+        ":gpu_tool_utils",
+        ":sk_app",
+        ":skia",
+        ":tool_utils",
+      ]
+    }
+
+
+
   if (is_linux || is_mac || is_ios) {
     test_app("SkiaSDLExample") {
       sources = [
