@@ -2265,6 +2265,7 @@ if (skia_enable_tools) {
     test_app("Drawing") {
       sources = [
         "drawing/Drawing.cpp",
+		"drawing/bitmap_time/bitmap_time.cpp",
       ]
       libs = []
 

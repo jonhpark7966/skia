@@ -97,11 +97,11 @@ public:
         return fRepetitionCount;
     }
 
-protected:
+//protected:
     SkRect onGetBounds() override;
     void onDraw(SkCanvas*) override;
 
-private:
+//private:
     struct Frame {
         SkBitmap fBitmap;
         int      fIndex;
